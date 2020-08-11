@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- Modal -->
-<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="employeesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
@@ -17,7 +17,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form action="insertprojectcode.php" method="POST">
+        <form action="insertprojects.php" method="POST">
             <div class="modal-body">
                 <div class="form-group">
                     <!-- <label>ID</label> -->
@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label>Employee</label>
-                    <input type="text" name="projects" class="form-control" placeholder="Employees">
+                    <input type="text" name="employees" class="form-control" placeholder="Employees">
                 </div>
             </div>
             <div class="modal-footer">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                     <label>Employee</label>
-                    <input type="text" name="projects" id="projects" class="form-control" placeholder="Enter Employee">
+                    <input type="text" name="employees" id="employees" class="form-control" placeholder="Enter Employee">
                 </div>
             </div>
             <div class="modal-footer">
@@ -87,7 +87,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form action="deletecode.php" method="POST">
+        <form action="deleteprojects.php" method="POST">
 
             <div class="modal-body">
                     <input type="hidden" name="delete_id" id="delete_id">
