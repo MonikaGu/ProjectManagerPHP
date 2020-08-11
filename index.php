@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                     <label>Project</label>
-                    <input type="text" name="projects" id="projects" class="form-control" placeholder="Enter Project">
+                    <input type="text" name="projects" id="projects" class="form-control" placeholder="Enter Project ID">
                 </div>
             </div>
             <div class="modal-footer">

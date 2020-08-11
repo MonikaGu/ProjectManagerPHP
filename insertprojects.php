@@ -6,14 +6,14 @@ if(isset($_POST['insertdata']))
 {
     $id = $_POST['id'];
     $firstname = $_POST['firstname'];
-    $projects = $_POST['projects'];
+    $employees = $_POST['employees'];
 
-    $query = "INSERT INTO employees ( `firstname`, `projects`) VALUES ('$firstname', '$projects')";
+    $query = "INSERT INTO projects ( `firstname`, `employees`) VALUES ('$firstname', '$employees')";
     $query_run = mysqli_query($connection, $query);
 
     if ($query_run) {
         echo '<script> alert("Data Saved"); </script>';
-        header('Location: index.php');
+        header('Location: projects.php');
     }
     else {
         echo '<script> alert("Data Not Saved"); </script>';
